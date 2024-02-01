@@ -61,7 +61,7 @@ const List = () => {
     },
   ];
   return (
-    <TableContainer component={Paper}>
+    <TableContainer component={Paper} className="table">
       <Table sx={{ minWidth: 650 }} aria-label="table">
         <TableHead>
           <TableRow>
@@ -81,6 +81,7 @@ const List = () => {
               <TableCell className="tableCell">
                 <div className='cellWrapper'>
                     <img src={row.img} alt="/" className='image' />
+                    {row.product}
                 </div>
               </TableCell>
               <TableCell className="tableCell">{row.customer}</TableCell>
