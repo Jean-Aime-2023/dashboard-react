@@ -14,18 +14,18 @@ const Home = () => {
       <div className="homeContainer">
         <Navbar />
         <div className="widgets">
-          <Widgets type="user"/>
-          <Widgets type="order"/>
-          <Widgets type="earning"/>
-          <Widgets type="balance"/>
+          <Widgets type="user" />
+          <Widgets type="order" />
+          <Widgets type="earning" />
+          <Widgets type="balance" />
         </div>
         <div className="charts">
-          <Featured/>
-          <Chart title="Last 6 months (Revenue)" aspect={2/1}/>
+          <Featured />
+          <Chart title="Last 6 months (Revenue)" aspect={2 / 1} />
         </div>
         <div className="listContainer">
           <div className="listTitle">Latest Transactions</div>
-          <Table/>
+          <Table />
         </div>
       </div>
     </div>
